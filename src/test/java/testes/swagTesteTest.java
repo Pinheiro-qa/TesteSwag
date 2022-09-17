@@ -18,7 +18,7 @@ public class swagTesteTest {
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         navegador.get("https://www.saucedemo.com/");
-        //Acesar os elementos do site para fazer asserts
+        //Acessar os elementos do site para executar os asserts
         navegador.findElement(By.id("user-name")).sendKeys("standard_user");
         navegador.findElement(By.id("password")).sendKeys("secret_sauce");
         navegador.findElement(By.id("login-button")).click();
