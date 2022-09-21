@@ -6,14 +6,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 import java.util.concurrent.TimeUnit;
 
 public class swagTesteTest {
 
+
     @Test
     public void inclusaoDeProdutosNoCarrinho(){
         //Informar onde o Chromedriver está no computador que irá executar o teste
-        System.setProperty("webdriver.chrome.driver", "F:\\Tutorial_Chrome_Driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\drive\\chromedriver.exe");
         // atribuir ao browser para abrir um novo navegador
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -27,7 +29,7 @@ public class swagTesteTest {
     }
     @Test
     public void selecionarViaPaginaDoProduto(){
-        System.setProperty("webdriver.chrome.driver", "F:\\Tutorial_Chrome_Driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\drive\\chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         navegador.get("https://www.saucedemo.com/");
@@ -40,7 +42,7 @@ public class swagTesteTest {
     }
     @Test
     public void carrinhoSemProduto(){
-        System.setProperty("webdriver.chrome.driver", "F:\\Tutorial_Chrome_Driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\drive\\chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         navegador.get("https://www.saucedemo.com/");
@@ -52,7 +54,7 @@ public class swagTesteTest {
     }
     @Test
     public void checkoutSemDados(){
-        System.setProperty("webdriver.chrome.driver", "F:\\Tutorial_Chrome_Driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\drive\\chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         navegador.get("https://www.saucedemo.com/");
@@ -67,7 +69,7 @@ public class swagTesteTest {
     }
     @Test
     public void cadastroEretiradaDeProdutosNoCarrinho() {
-        System.setProperty("webdriver.chrome.driver", "F:\\Tutorial_Chrome_Driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\drive\\chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         navegador.get("https://www.saucedemo.com/");
@@ -87,7 +89,7 @@ public class swagTesteTest {
     }
     @Test
     public void botaoContinuarComprando() {
-        System.setProperty("webdriver.chrome.driver", "F:\\Tutorial_Chrome_Driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\drive\\chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         navegador.get("https://www.saucedemo.com/");
@@ -100,7 +102,7 @@ public class swagTesteTest {
     }
     @Test
     public void logoutDiretoDoCarrinho() {
-        System.setProperty("webdriver.chrome.driver", "F:\\Tutorial_Chrome_Driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\drive\\chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         navegador.get("https://www.saucedemo.com/");
@@ -114,7 +116,7 @@ public class swagTesteTest {
     }
     @Test
     public void checkouDadosInvalidos() {
-        System.setProperty("webdriver.chrome.driver", "F:\\Tutorial_Chrome_Driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\drive\\chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         navegador.get("https://www.saucedemo.com/");
@@ -132,7 +134,7 @@ public class swagTesteTest {
     }
     @Test
     public void finalizacaoSemProdutos() {
-        System.setProperty("webdriver.chrome.driver", "F:\\Tutorial_Chrome_Driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\drive\\chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         navegador.get("https://www.saucedemo.com/");
@@ -149,7 +151,7 @@ public class swagTesteTest {
     }
     @Test
     public void finalizacaoComTodosProdutos() {
-        System.setProperty("webdriver.chrome.driver", "F:\\Tutorial_Chrome_Driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\drive\\chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         navegador.get("https://www.saucedemo.com/");
