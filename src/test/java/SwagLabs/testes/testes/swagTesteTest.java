@@ -1,7 +1,8 @@
-package testes;
+package SwagLabs.testes.testes;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,6 +27,7 @@ public class swagTesteTest {
         navegador.findElement(By.id("login-button")).click();
         navegador.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
         navegador.findElement(By.id("shopping_cart_container")).click();
+        navegador.quit();
     }
     @Test
     public void selecionarViaPaginaDoProduto(){
@@ -39,6 +41,7 @@ public class swagTesteTest {
         navegador.findElement(By.id("item_4_img_link")).click();
         navegador.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
         navegador.findElement(By.id("shopping_cart_container")).click();
+        navegador.quit();
     }
     @Test
     public void carrinhoSemProduto(){
@@ -51,6 +54,7 @@ public class swagTesteTest {
         navegador.findElement(By.id("login-button")).click();
         navegador.findElement(By.id("shopping_cart_container")).click();
         navegador.findElement(By.id("checkout")).click();
+        navegador.quit();
     }
     @Test
     public void checkoutSemDados(){
@@ -66,6 +70,7 @@ public class swagTesteTest {
         navegador.findElement(By.id("shopping_cart_container")).click();
         navegador.findElement(By.id("checkout")).click();
         navegador.findElement(By.id("continue")).click();
+        navegador.quit();
     }
     @Test
     public void cadastroEretiradaDeProdutosNoCarrinho() {
@@ -86,6 +91,7 @@ public class swagTesteTest {
         navegador.findElement(By.id("remove-sauce-labs-fleece-jacket")).click();
         navegador.findElement(By.id("remove-test.allthethings()-t-shirt-(red)")).click();
         navegador.findElement(By.id("continue-shopping")).click();
+        navegador.quit();
     }
     @Test
     public void botaoContinuarComprando() {
@@ -99,6 +105,7 @@ public class swagTesteTest {
         navegador.findElement(By.id("add-to-cart-test.allthethings()-t-shirt-(red)")).click();
         navegador.findElement(By.id("shopping_cart_container")).click();
         navegador.findElement(By.id("continue-shopping")).click();
+        navegador.quit();
     }
     @Test
     public void logoutDiretoDoCarrinho() {
@@ -113,6 +120,7 @@ public class swagTesteTest {
         navegador.findElement(By.id("shopping_cart_container")).click();
         navegador.findElement(By.id("react-burger-menu-btn")).click();
         navegador.findElement(By.id("logout_sidebar_link")).click();
+        navegador.quit();
     }
     @Test
     public void checkouDadosInvalidos() {
@@ -131,6 +139,7 @@ public class swagTesteTest {
         navegador.findElement(By.id("postal-code")).sendKeys("    ");
         navegador.findElement(By.id("continue")).click();
         navegador.findElement(By.id("finish")).click();
+        navegador.quit();
     }
     @Test
     public void finalizacaoSemProdutos() {
@@ -148,6 +157,7 @@ public class swagTesteTest {
         navegador.findElement(By.id("postal-code")).sendKeys("    ");
         navegador.findElement(By.id("continue")).click();
         navegador.findElement(By.id("finish")).click();
+        navegador.quit();
     }
     @Test
     public void finalizacaoComTodosProdutos() {
@@ -171,5 +181,6 @@ public class swagTesteTest {
         navegador.findElement(By.id("postal-code")).sendKeys("20400851");
         navegador.findElement(By.id("continue")).click();
         navegador.findElement(By.id("finish")).click();
+        navegador.quit();
     }
 }
